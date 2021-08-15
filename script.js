@@ -85,6 +85,12 @@ btnChange.forEach(btn => {
     })
 })
 
+overlay.addEventListener('click', ()=>{
+    popUp.style.display = 'none';
+    overlay.style.display = 'none';
+    count = 0;
+})
+
 function carrousel(item) {
     
     let direction = item.target.dataset.arrow
